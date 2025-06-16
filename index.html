@@ -20,9 +20,10 @@
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #ffffff;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
     }
 
@@ -32,13 +33,9 @@
       border-radius: 16px;
       padding: 40px;
       max-width: 700px;
+      width: 90%;
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
       backdrop-filter: blur(8px);
-    }
-
-    img.logo {
-      width: 120px;
-      margin-bottom: 20px;
     }
 
     h1 {
@@ -92,24 +89,38 @@
       font-size: 0.9em;
       color: #cccccc;
     }
+
+    .bottom-logo {
+      margin-top: 1px;
+    }
+
+    .bottom-logo img {
+      width: 260px;
+      opacity: 1;
+      filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      transition: transform 0.3s ease;
+    }
+
+    .bottom-logo img:hover {
+      transform: scale(1.4);
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <img class="logo" src="https://i.ibb.co/JFGyxtd/logo.png" alt="ByteLab Logo" />
     <h1>ByteLab.lv</h1>
     <h2>Building the future - Byte by Byte</h2>
 
     <div class="lang-section">
       <h3>LV | Latviešu</h3>
-      <p><strong>Saite atrodas izstrādē</strong></p>
-      <p>Drīzumā <strong>ByteLab.lv</strong> </p>
+      <p><strong>Sāsite izstrādē </strong></p>
+      <p><strong>ByteLab.lv</strong> </p></strong> </p>
     </div>
 
     <div class="lang-section">
       <h3>RU | Русский</h3>
-      <p><strong>Сайт в разработке</strong></p>
-      <p>Скоро здесь появится <strong>ByteLab.lv</strong> </p>
+      <p><strong>Скоро появится</strong></p>
+      <p><strong>ByteLab.lv</strong> </p></strong> </p>
     </div>
 
     <div class="lang-section">
@@ -126,8 +137,14 @@
 
     <div class="footer">
       <p>CEO: Nikolay Aleksandr Kochkin</p>
-      <p>© 2025 ByteLab.lv — All rights reserved</p>
+      <p>© 2025 www.ByteLab.lv — All rights reserved</p>
     </div>
+  </div>
+
+  <div class="bottom-logo">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/8LYfDKPL/29954514-b90e-4fe9-bf33-c6165c95fe98-removalai-preview.png" alt="New ByteLab Logo">
+    </a>
   </div>
 </body>
 </html>
