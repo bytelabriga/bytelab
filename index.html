@@ -4,10 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Сайт в разработке / Site Under Construction / Tīmekļa vietne izstrādes stadijā</title>
+<!-- Подключение шрифтов Google для более стильного вида -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <style>
   body {
     margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,58 +17,90 @@
     background: linear-gradient(135deg, #74ebd5, #ACB6E5);
     color: #fff;
     flex-direction: column;
-    text-align: center;
     padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
   }
 
   h1 {
-    font-size: 2.5em;
-    margin: 0.2em 0;
+    font-size: 2.8em;
+    margin-bottom: 0.3em;
+    font-weight: 700;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   }
 
   p {
-    margin-top: 0.5em;
     font-size: 1.2em;
-    max-width: 600px;
-  }
-
-  .contacts {
-    margin-top: 1.5em;
-    font-size: 1.1em;
+    margin: 0.5em 0;
+    line-height: 1.4;
   }
 
   .slogan {
     margin-top: 1.5em;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.6em;
+    font-weight: 700;
     font-style: italic;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   }
 
-  @media (max-width: 600px) {
+  .contacts {
+    margin-top: 2em;
+    font-size: 1.1em;
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .contacts p {
+    margin: 0.3em 0;
+  }
+
+  /* Анимация для заголовка */
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+
+  h1 {
+    animation: pulse 2s infinite;
+  }
+
+  @media(max-width: 600px){
     h1 {
       font-size: 2em;
     }
-    p, .contacts {
+    p, .slogan {
       font-size: 1em;
     }
-    .slogan {
-      font-size: 1.2em;
+    .contacts {
+      font-size: 1em;
+      padding: 10px;
     }
   }
 </style>
 </head>
 <body>
-<h1>Сайт в разработке / Site Under Construction / Tīmekļa vietne izstrādes stadijā</h1>
-<p>Скоро здесь появится ByteLab.lv / ByteLab.lv will be here soon / ByteLab.lv drīz būs šeit</p>
-<div class="slogan">Bytelab - Building the future byte by byte</div>
-<div class="contacts">
-  <p>Связаться с нами / Contact us / Sazinieties ar mums:</p>
-  <p>Regards,</p>
-  <p><strong>info@bytelab.lv</strong></p>
-  <p><strong>+371 22361104</strong></p>
+<div class="container">
+  <h1>Сайт в разработке / Site Under Construction / Tīmekļa vietne izstrādes stadijā</h1>
+  <p>Скоро здесь появится ByteLab.lv / ByteLab.lv will be here soon / ByteLab.lv drīz būs šeit</p>
+  <div class="slogan">Bytelab - Building the future byte by byte</div>
+  <div class="contacts">
+    <p>Связаться с нами / Contact us / Sazinieties ar mums:</p>
+    <p>Regards,</p>
+    <p><strong>info@bytelab.lv</strong></p>
+    <p><strong>+371 22361104</strong></p>
+  </div>
 </div>
 </body>
 </html>
