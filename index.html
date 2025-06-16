@@ -1,108 +1,109 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="lv">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Сайт в разработке / Site Under Construction / Tīmekļa vietne izstrādes stadijā</title>
-    <!-- Подключение шрифтов Google для более стильного вида -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
-            color: #fff;
-            flex-direction: column;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteLab.lv — Sāsite izstrādē</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        .container {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-            max-width: 700px;
-            width: 100%;
-        }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
 
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 700px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+    }
 
-        p {
-            font-size: 1.3em;
-            margin: 0.5em 0;
-            line-height: 1.5;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        }
+    img.logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
 
-        .slogan {
-            margin-top: 1.5em;
-            font-size: 1.8em;
-            font-weight: 700;
-            font-style: italic;
-            color: #fff;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
 
-        .contacts {
-            margin-top: 2em;
-            font-size: 1.1em;
-            background: rgba(255, 255, 255, 0.3);
-            padding: 15px;
-            border-radius: 10px;
-        }
+    h2 {
+      font-size: 1.2em;
+      font-weight: 300;
+      margin-bottom: 30px;
+      color: #cccccc;
+    }
 
-        .contacts p {
-            margin: 0.3em 0;
-        }
+    p {
+      font-size: 1em;
+      margin: 8px 0;
+    }
 
-        /* Анимация для заголовка */
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
 
-        h1 {
-            animation: pulse 2s infinite;
-        }
+    a:hover {
+      text-decoration: underline;
+    }
 
-        @media(max-width: 600px) {
-            h1 {
-                font-size: 2.5em;
-            }
-            p, .slogan {
-                font-size: 1em;
-            }
-            .contacts {
-                font-size: 0.9em;
-                padding: 10px;
-            }
-        }
-    </style>
+    .lang-section {
+      margin-bottom: 30px;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: rgba(255,255,255,0.2);
+      margin: 30px 0;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Сайт в разработке</h1>
-        <p>Скоро здесь появится <strong>ByteLab.lv</strong></p>
-        <div class="slogan">Bytelab - Building the future byte by byte</div>
-        <div class="contacts">
-            <p>Связаться с нами:</p>
-            <p><strong>info@bytelab.lv</strong></p>
-            <p><strong>+371 22361104</strong></p>
-        </div>
+  <div class="container">
+    <img class="logo" src="https://i.ibb.co/JFGyxtd/logo.png" alt="ByteLab Logo" />
+    <h1>ByteLab.lv</h1>
+    <h2>Building the future byte by byte</h2>
+
+    <div class="lang-section">
+      <h3>LV | Latviešu</h3>
+      <p><strong>Sāsite izstrādē</strong></p>
+      <p>Drīz šeit būs pieejams <strong>ByteLab.lv</strong> — moderna tehnoloģiju laboratorija.</p>
     </div>
+
+    <div class="lang-section">
+      <h3>RU | Русский</h3>
+      <p><strong>Сайт в разработке</strong></p>
+      <p>Скоро здесь появится <strong>ByteLab.lv</strong> — современная технологическая лаборатория.</p>
+    </div>
+
+    <div class="lang-section">
+      <h3>EN | English</h3>
+      <p><strong>Website under construction</strong></p>
+      <p><strong>ByteLab.lv</strong> — a modern tech lab — is coming soon!</p>
+    </div>
+
+    <hr />
+
+    <p><strong>Sazināties ar mums | Contact us:</strong></p>
+    <p><a href="mailto:info@bytelab.lv">info@bytelab.lv</a></p>
+    <p><a href="tel:+37122361104">+371 22361104</a></p>
+  </div>
 </body>
 </html>
