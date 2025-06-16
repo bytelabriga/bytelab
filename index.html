@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ByteLab.lv — Sāsite izstrādē</title>
+  <title>ByteLab.lv — Saite atrodas izstrādē</title>
+  
+  <!-- Подключение шрифта -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet" />
+
   <style>
     * {
       box-sizing: border-box;
@@ -43,10 +47,19 @@
     }
 
     h2 {
-      font-size: 1.2em;
-      font-weight: 300;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6em;
+      font-style: italic;
+      color: #e0e0e0;
       margin-bottom: 30px;
-      color: #cccccc;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     p {
@@ -73,18 +86,24 @@
       background: rgba(255,255,255,0.2);
       margin: 30px 0;
     }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #cccccc;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <img class="logo" src="https://i.ibb.co/JFGyxtd/logo.png" alt="ByteLab Logo" />
     <h1>ByteLab.lv</h1>
-    <h2>Building the future byte by byte</h2>
+    <h2>Building the future - Byte by Byte</h2>
 
     <div class="lang-section">
       <h3>LV | Latviešu</h3>
-      <p><strong>Sāsite izstrādē</strong></p>
-      <p>Drīz šeit būs pieejams <strong>ByteLab.lv</strong> — </p>
+      <p><strong>Saite atrodas izstrādē</strong></p>
+      <p>Drīzumā <strong>ByteLab.lv</strong> </p>
     </div>
 
     <div class="lang-section">
@@ -96,7 +115,7 @@
     <div class="lang-section">
       <h3>EN | English</h3>
       <p><strong>Website under construction</strong></p>
-      <p><strong>ByteLab.lv</strong> — is coming soon!</p>
+      <p><strong>ByteLab.lv</strong> </p>
     </div>
 
     <hr />
@@ -104,6 +123,11 @@
     <p><strong>Sazināties ar mums | Contact us:</strong></p>
     <p><a href="mailto:info@bytelab.lv">info@bytelab.lv</a></p>
     <p><a href="tel:+37122361104">+371 22361104</a></p>
+
+    <div class="footer">
+      <p>CEO: Nikolay Aleksandr Kochkin</p>
+      <p>© 2025 ByteLab.lv — All rights reserved</p>
+    </div>
   </div>
 </body>
 </html>
